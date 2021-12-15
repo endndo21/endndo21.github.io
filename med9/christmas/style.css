@@ -1,0 +1,587 @@
+body {
+    margin:0;
+    background-color: red;
+   
+  }
+  
+  ::selection {
+    color: white;
+    background: green;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    padding: 8px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .active {
+    border-bottom: 5px solid green;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 18px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    border-bottom: 5px solid white;
+    color: white;
+  }
+  
+  .dropdown-content a:hover {
+    border-bottom: 5px solid white;
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .menu {
+    float: left;
+    width: 20%;
+    color: white;
+    text-align: center;
+  
+  }
+  .menuitem {
+    padding: 8px;
+    margin-top: 7px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+  .main {
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+  
+  }
+  .right {
+    float: left;
+    width: 20%;
+    padding: 10px 15px;
+    margin-top: 7px;
+  }
+  
+  @media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+  .flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  .start{
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  .start:hover{
+   background-color: lightgreen;
+   color: black; 
+  }
+  
+  #mySidenav a {
+    position: fixed;
+    margin: 100px;
+    right: -290px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 240px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    right: -100px;
+  }
+  
+  #photo {
+    top: 20px;
+    background-color: green;
+  }
+  
+  #sponsored {
+    top: 80px;
+    background-color: red;
+  }
+  
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  
+  .menubutton:hover{
+    border-bottom: 5px solid green;
+  }
+  
+  h1{
+    color: #f1f1f1;
+  }
+  p{
+    color: white;
+  }
+  h2{
+    color: white;
+  }
+  
+  .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .container .card:before{
+  
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out; 
+  }
+  
+  .container .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+  }
+  
+  .container .card:after{
+  
+  
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+   
+  }
+  
+  .container .card .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  
+  }
+  
+  .container .card:hover .imgBx{
+  
+    top: 0%;
+    transform: translateY(0%);
+  }
+  .container .card .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 270px;
+  
+  }
+  
+  .container .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  
+  }
+  .container .card:hover .contentBx{
+    height: 210px;
+    
+  }
+  
+  .container .card .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  .container .card .contentBx .size,
+  .container .card .contentBx .color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .container .card:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  
+  }
+  
+  .container .card:hover .contentBx .color{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+    
+  }
+  .container .card .contentBx .size h3,
+  .container .card .contentBx .color h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+  
+  }
+  
+  .container .card .contentBx .size span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  
+  }
+  .container .card .contentBx .size span:hover{
+    background: #9bdc98;
+  
+  }
+  
+  .container .card .contentBx .color span{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  
+  }
+  
+  .container .card .contentBx .color span:nth-child(2){
+    background: #9bdc28;
+  }
+  
+  .container .card .contentBx .color span:nth-child(3){
+    background: #03a9f4;
+  }
+  
+  .container .card .contentBx .color span:nth-child(4){
+    background: #e91e63;
+  }
+  
+  .container .card .contentBx a{
+    display: inline-block;
+    padding: 10px 20px ;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+  }
+  
+  
+  
+  .container .card:hover .contentBx a{
+  
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+  
+  }
+  
+  img{
+    border-radius: 20px;
+    padding-bottom: 20px;
+  
+  }
+  .imghead{
+    text-align: center;
+  }
+  
+  .bb{
+    padding: 30px;
+    width: 50px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .bb:hover{
+    border-bottom: 5px solid green;
+  }
+  
+  .image{
+   text-align: center;
+  
+  }
+  
+  .text {
+  position: absolute;
+  
+  font-size: 30px;
+  }
+  
+  .p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  }
+  
+  .word {
+  position: absolute;
+  width: 220px;
+  opacity: 0;
+  }
+  
+  .letter {
+  display: inline-block;
+  position: relative;
+  
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+  }
+  
+  .letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+  .letter.behind {
+  transform: rotateX(-90deg);
+  }
+  
+  .letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .wisteria {
+  color: #8e44ad;
+  }
+  
+  .belize {
+  color: #2980b9;
+  }
+  
+  .pomegranate {
+  color: yellow;
+  }
+  
+  .green {
+  color: #16a085;
+  }
+  
+  .midnight {
+  color: #2c3e50;
+  }
