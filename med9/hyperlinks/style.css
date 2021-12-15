@@ -1,0 +1,76 @@
+*{
+	scroll-behavior: smooth;
+}
+body{
+	background-color: lightblue;
+	margin: 0px;
+}
+h1{
+	background-color: darkblue;
+	color: white;
+	padding: 30px;
+	font-size: 50px;
+}
+.button1{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	width: 40px;
+	background-color: green;
+	border-radius: 15px;
+}
+.button2{
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	padding: 10px;
+	width: 40px;
+	background-color: yellow;
+	border-radius: 15px;
+}
+.button3{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 10px;
+	width: 40px;
+	background-color: orange;
+	border-radius: 15px;
+}
+p{
+	font-size: 30px;
+
+	
+}
+.navbar{
+	text-align: center;
+}
+.row{
+    margin: 400px;
+	
+}
+.footer{
+	text-align: center;
+	padding: 30px;
+	background-color: black;
+	color: white;
+
+}
+.myself{
+	padding: 10px;
+	margin: 30px;
+	font-size: 30px;
+
+}
+ol{
+	list-style: none;
+	margin: 50px;
+}
+img{
+	
+	padding: 10px;
+}
+.img{
+	margin: 20px;
+}

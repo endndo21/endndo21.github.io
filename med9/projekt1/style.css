@@ -1,0 +1,80 @@
+body{
+	background-color: black;
+	margin: 0;
+}
+
+h1{
+	color: white;
+}
+
+.main{
+	text-align: center;
+}
+
+p{
+	color: white;
+	font-size: 20px;
+	text-align: center;
+
+}
+
+ol{
+	color: white;
+	margin: 5px;
+	padding: 5px;
+	font-size: 20px;
+	list-style: none;
+	text-align: center;
+}
+
+h2{
+	color: white;
+	text-align: center;
+
+}
+
+.feeds{
+	margin: 35px;
+	padding: 50px;
+	background-color: red;
+}
+
+.location{
+	background-color: green;
+	padding: 50px;
+	margin: 35px;
+}
+
+
+a{
+	text-decoration: none;
+	color: yellow;
+	font-size: 25px;
+	padding: 15px;
+	border-radius: 15px;
+}
+ul{
+	text-align: center;
+	list-style: none;
+	color: red;
+	font-size: 20px;
+}
+
+.video {
+	text-align: center;
+}
+
+a:hover{
+	border-bottom: 5px solid green;
+}
+
+.go{
+	text-align: center;
+	padding: 30px;
+	margin: 35px;
+	background-color: blue;
+}
+.name{
+   text-align: center;
+   margin: 50px;
+}

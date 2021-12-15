@@ -1,0 +1,23 @@
+body{
+	background-color: blue;
+	margin: 0px;
+}
+.box1{
+	background-color: lightblue;
+	padding: 50px;
+	border: 5px solid darkblue;
+	border-radius: 5px;
+	margin: 50px;
+	margin-left: 50px;
+}
+.box2{
+	background-color: lightblue;
+	padding: 50px;
+	text-align: right;
+	border: 10px dotted ;
+	border-radius: 5px;
+	border-color: darkblue;
+	margin: 50px;
+	margin-left: 50px;
+	
+}

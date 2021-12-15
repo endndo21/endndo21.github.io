@@ -1,0 +1,36 @@
+body{
+	background-color: black;
+}
+h1{
+	color: green;
+	font-size: 30px;
+	text-align: center;
+	font-family: Lucida Handwriting;
+}
+p{
+	color: white;
+	text-align: center;
+	width: 250px;
+}
+.row{
+	color: yellow;
+	margin: 120px;
+	padding: 10px;
+	font-size: 50px;
+}
+ul{
+	font-size: 40px;
+}
+.button {
+  background-color: green;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
