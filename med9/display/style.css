@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Neonderthaw&family=Nova+Mono&family=Patrick+Hand&family=Red+Hat+Mono:wght@300&family=Roboto:ital@1&family=Rubik+Beastly&family=Supermercado+One&display=swap');
+
+body{
+    background: linear-gradient(90deg, rgba(0,255,247,1) 0%, rgba(84,152,255,1) 22%, rgba(131,58,180,1) 46%, rgba(244,69,69,1) 75%, rgba(255,251,0,1) 100%, rgba(131,58,180,1) 100%);
+}
+h2{
+    font-size: 25px;
+    padding: 30px;
+    background-color: rgb(58, 198, 8);
+    display: inline-block;
+    
+}
+.t{
+    text-align: center;
+}
+
+.green{
+ background-color: green;
+ letter-spacing: 6px;
+}
+
+.blue{
+    background-color: blue;
+    font-size: 25px;
+    color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+a {
+    display: block;
+    padding: 30px;
+    margin: 10px;
+    font-size: 30px;
+    border: 3px solid red;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+}
+
+a:hover{
+    background-color: rgb(58, 198, 8);
+    color: black;
+    transition: 0.2s;
+}
+
+p{
+    font-size: 19px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.img{
+    text-align: center;
+
+}
+img{
+    border-radius: 15px ;
+}
+
+.ul{
+    float: right;
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(58, 198, 8);
+}
+
+h1{
+    margin: 50px;
+    float: left;
+}
+
+.work:hover{
+    transition: 0.2s;
+    color: yellow;
+}
