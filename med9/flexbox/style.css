@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Neonderthaw&family=Nova+Mono&family=Patrick+Hand&family=Red+Hat+Mono:wght@300&family=Roboto:ital@1&family=Rowdies:wght@300&family=Rubik+Beastly&family=Source+Code+Pro:wght@200&family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lobster&family=Neonderthaw&family=Nova+Mono&family=Patrick+Hand&family=Red+Hat+Mono:wght@300&family=Roboto:ital@1&family=Rowdies:wght@300&family=Rubik+Beastly&family=Supermercado+One&display=swap');
+body{
+    background: linear-gradient(90deg, rgba(0,255,247,1) 0%, rgba(57,255,0,1) 48%, rgba(3,251,246,1) 95%);
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+.first{
+    background-color: lightblue;
+    height: 700px;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: stretch;
+
+}
+
+p{
+    background-color: red;
+    padding: 10px;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.second{
+    background-color: lightgreen;
+    height: 700px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third{
+    background-color: yellow;
+    height: 700px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.fourth{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 700px;
+    background-color: rgb(0, 204, 255);
+}
