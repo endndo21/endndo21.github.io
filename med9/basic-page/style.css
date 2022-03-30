@@ -1,0 +1,225 @@
+/* 
+*
+*
+*Title:Basic structure of a page
+*Author:Endri Ndoja
+*Date:2022-03-16
+*
+*
+*/
+
+
+/****************************  General Styling  ****************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap');
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    margin: 0;
+}
+
+/* Navigation */
+nav{
+    background-color: rgb(13, 126, 219);
+    padding: 30xp;
+    display: flex; /* we need flexbox becouse we need to put things in a row */
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav img{
+    width: 70px;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li a{
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+nav ul li a:hover{
+    color: rgb(33, 179, 33);
+ 
+}
+
+.active{
+    color: rgb(33, 179, 33);
+}
+
+/*Header*/
+header{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(1.jpg);
+    background-position: center;
+    background-size: cover;
+   
+}
+
+header h1{
+font-size: 20px;
+background-color: rgb(33, 179, 33, 0.7);
+padding: 20px;
+}
+
+/*Main*/
+
+main{
+    padding: 50px;
+    background-color: aquamarine;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    color: darkgreen;
+   
+}
+main ol{
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  font-size: 20px;
+  color: darkgreen;
+}
+
+
+
+
+/*Footer*/
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(13, 126, 219);
+
+}
+
+footer p{
+    font-size: 20px;
+    background-color: white;
+    color: darkblue;
+    padding: 15px;
+}
+
+/* Section */
+section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section .left{
+  width: 60%;
+  background-color: aqua;
+  padding: 30px;
+}
+section .right{
+    width: 40%;
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+
+/******************* Home Page Styling ****************************************************/
+
+#home header{
+    background-image: url(1.jpg);
+    font-family: 'Creepster', cursive;
+}
+
+#home #pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#home #pictures img{
+    width: 200px;
+    margin: 10px;
+    border: 2px solid darkblue;
+}
+
+#home main{
+    font-family: 'Palette Mosaic', cursive;
+}
+
+
+/***************** About Page Styling **************************************************/
+
+#about header{
+    background-image: url(3.jpg);
+    font-family: 'Creepster', cursive;
+}
+
+
+#about main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    font-size: 15px;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+#about main ul{
+    color: red;
+}
+
+/***************** Engine Page Styling **************************************************/
+
+#engine header{
+    background-image: url(images/engine.jpg);
+    font-family: 'Creepster', cursive;
+}
+
+
+#engine main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    font-size: 15px;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+#engine main ul{
+    color: red;
+}
+
+
+#engine #pictures{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#engine #pictures img{
+    width: 200px;
+    margin: 10px;
+    border: 2px solid darkblue;
+}
