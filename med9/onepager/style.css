@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav{
+    background-color: rgb(0, 0, 0);
+    padding: 30xp;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+
+}
+
+nav img{
+    width: 70px;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li a{
+    margin: 20px;
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 50px;
+    background-color: black;
+    border-radius: 15px;
+    font-family: 'Rubik Moonrocks', cursive;
+    background-color: rgb(64, 65, 65);
+}
+
+nav ul li a:hover{
+    color: rgb(33, 179, 33);
+    background-color: rgb(64, 65, 65);
+ 
+}
+
+.active{
+    color: rgb(33, 179, 33);
+}
+
+
+header{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(2.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+    
+}
+
+section{
+    padding: 300px;
+
+}
+
+#link1{
+    background-color: rgb(122, 122, 122);
+    color: white;
+    font-size: 20px;
+}
+
+#link2{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-size: 20px;
+}
+
+#link3{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 20px;
+}
