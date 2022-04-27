@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    position: relative;
+}
+
+.left{
+    height: 250px;
+    width: 50%;
+    background-image: url("shkodra.jpg");
+    background-size: cover;
+}
+
+.right{
+    height: 250px;
+    width: 50%;
+    background: linear-gradient(32deg, rgba(34,178,195,1) 25%, rgba(54,45,253,1) 100%);
+}
+
+h2{
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 460px;
+    width: auto;
+    padding: 20px;
+    background-color: white;
+    color: blue;
+    font-size: 35px;
+    
+}
+
+h1{
+    position: absolute;
+    font-size: 20px;
+    width: auto;
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    top: 135px;
+    left: 290px;
+    z-index: 100;
+}
