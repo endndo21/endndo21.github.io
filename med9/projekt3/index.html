@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.jpg">
+    <script src="https://kit.fontawesome.com/27f4e28085.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body id="index">
+
+    <nav>
+        <div class="logo"><img src="image/logo.jpg" >
+            <li><div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-gear"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index.html"> <img  src="image/uk.png" width="30px"> English</a>
+                  <a href="indexde.html"><img  src="image/germany.png" width="30px"> German</a>
+                </div>
+              </div>
+              
+            </li>
+           
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Car</a></li>
+            <li><a href="about.html">About</a></li>
+           
+        </ul>
+    </nav>
+    <br><br><br><br><br><br><br>
+    
+    
+    <header>
+        <h1>Car <span style="color: green;">Shop</span> </h1>
+        
+    </header>
+
+    
+      <div class="text">
+          <p class="p">&nbsp;&nbsp;&nbsp;</p>
+          </span>
+          <span class="word green"> Mercedes-Benz</span>
+          <span class="word wisteria">Audi
+          </span>
+          <span class="word midnight">BMW</span>
+          <span class="word belize">Range Rover</span>
+
+         </div>
+      
+    
+
+        
+        
+        <script id="rendered-js">
+        var words = document.getElementsByClassName('word');
+        var wordArray = [];
+        var currentWord = 0;
+        
+        words[currentWord].style.opacity = 1;
+        for (var i = 0; i < words.length; i++) {
+        splitLetters(words[i]);
+        }
+        
+        function changeWord() {
+        var cw = wordArray[currentWord];
+        var nw = currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+        for (var i = 0; i < cw.length; i++) {
+        animateLetterOut(cw, i);
+        }
+        
+        for (var i = 0; i < nw.length; i++) {
+        nw[i].className = 'letter behind';
+        nw[0].parentElement.style.opacity = 1;
+        animateLetterIn(nw, i);
+        }
+        
+        currentWord = currentWord == wordArray.length - 1 ? 0 : currentWord + 1;
+        }
+        
+        function animateLetterOut(cw, i) {
+        setTimeout(function () {
+        cw[i].className = 'letter out';
+        }, i * 80);
+        }
+        
+        function animateLetterIn(nw, i) {
+        setTimeout(function () {
+        nw[i].className = 'letter in';
+        }, 340 + i * 80);
+        }
+        
+        function splitLetters(word) {
+        var content = word.innerHTML;
+        word.innerHTML = '';
+        var letters = [];
+        for (var i = 0; i < content.length; i++) {
+        var letter = document.createElement('span');
+        letter.className = 'letter';
+        letter.innerHTML = content.charAt(i);
+        word.appendChild(letter);
+        letters.push(letter);
+        }
+        
+        wordArray.push(letters);
+        }
+        
+        changeWord();
+        setInterval(changeWord, 4000);
+        //# sourceURL=pen.js
+        </script>
+
+<main>
+    
+        <div class="bg-image"></div>
+
+        <div class="bg-text">
+          <h2>Car Shop</h2>
+          <h1 style="font-size:50px">Welcome to the Auto Shop</h1>
+          <p>Endri Ndoja</p>
+        </div>
+ </main>   
+    <article>
+
+        <div class="leftbutt">
+            <a class="about" href="about.html">About</a>
+        </div>
+       
+        <div class="text" style="margin-left:-140px;">
+            <h1>Our Car</h1>
+            <p>Best Prices</p>
+            <p>Quality</p>
+            <i style="color: rgb(240, 240, 79);" class="fa-solid fa-star"></i><i style="color: rgb(240, 240, 79);" class="fa-solid fa-star"></i><i style="color: rgb(240, 240, 79);" class="fa-solid fa-star"></i><i style="color: rgb(240, 240, 79);" class="fa-solid fa-star"></i><i style="color: rgb(240, 240, 79);" class="fa-solid fa-star"></i>
+        <div class="button">
+            <a href="products.html">See our cars</a>
+        </div>
+        </div>
+
+        <div class="img">
+            <div class="bacimg">
+
+            </div>
+        </div>
+
+    </article>
+    
+    <footer>
+        <div class="follow">
+           <a href="https://github.com/endndo21/endndo21.github.io"><i class="fa-brands fa-github"></i></a> 
+        </div>
+        <div class="info">
+            <h1>Endri Ndoja</h1>
+        </div>
+    </footer>
+    
+</body>
+</html>

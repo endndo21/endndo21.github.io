@@ -1,0 +1,925 @@
+/* Author-Endri Ndoja */
+
+/****************** General Style *******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+nav{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    padding: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    width: 30px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+img{
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul li a:hover{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+
+.dropbtn {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    z-index: 110;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ffffff;
+    color: black;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: auto;
+    background-color: whitesmoke;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+footer{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+/***************** Index Style *****************/
+
+#index .text {
+    position: absolute;
+    height: 50px;
+    font-size: 30px;
+    z-index: 1;
+    top: 130px;
+    }
+    
+    #index .text  .p {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    }
+    
+    #index  .word {
+    position: absolute;
+    width: 220px;
+    opacity: 0;
+    }
+    
+    #index   .letter {
+    display: inline-block;
+    position: relative;
+    
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+    }
+    
+    #index  .letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    
+    #index  .letter.behind {
+    transform: rotateX(-90deg);
+    }
+    
+    #index  .letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    #index .wisteria {
+    color: #8e44ad;
+    }
+    
+    #index .belize {
+    color: #2980b9;
+    }
+    
+    #index  .pomegranate {
+    color: yellow;
+    }
+    
+    #index .green {
+    color: #16a085;
+    }
+    
+    #index  .midnight {
+    color: #2c3e50;
+    }
+
+#index{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#index header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+   
+}
+
+#index main{
+    width: 100%;
+    height: 80vh;
+
+}
+
+#index .bg-image {
+    
+    background-image: url("image/car2.jpg");
+    
+    
+    filter: blur(8px);   /*Filter for Img*/
+    -webkit-filter: blur(8px);
+    
+    
+    height: 100%; 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+ 
+  #index .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #index .bg-text h2{
+    padding-bottom: 5px;
+  }
+
+  #index .bg-text h1{
+    padding-bottom: 5px;
+  }
+
+#index article{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#index article .text{
+   position: relative;
+   top: -100px;
+   left: 200px;
+   width: 50%;
+   max-height: 500px;
+   
+
+}
+
+#index article .text i{
+    padding-left: 10px;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#index article .text h1{
+    font-size: 40px;
+    padding: 5px;
+}
+
+#index article .text p{
+    font-size: 25px;
+    padding: 10px;
+}
+
+#index article .text a{
+    width: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 50px 50px 0 50px;
+    text-decoration: none;
+}
+
+#index article .text a:hover{
+    color: green;
+}
+
+#index article .text .button{
+    padding-top: 20px;
+}
+
+#index article .img{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;  /*Transition*/
+}
+
+#index article .img:hover{
+    transform: translateX(10px);
+    transition: 0.7s;
+}
+
+
+#index article .img .bacimg{
+    background-image: url("image/car6.jpg");  /*Background Image*/
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+#index article .leftbutt{
+    position: relative;
+    width: 150px;
+    top: 0;
+    left: -190px;
+    padding: 10px;
+    background-color: green;
+    padding-left: 80px;
+    border-radius: 0 30px 30px 0;
+    transition: 0.3s;
+}
+
+#index article .leftbutt:hover{
+    left: -50px;
+    transition: 0.3s;
+}
+
+#index article .leftbutt a{
+   font-size: 30px;
+   text-decoration: none;
+   color: white;
+}
+
+#index footer{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#index footer .follow{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#index footer .follow a{
+    text-decoration: none;  /*Remove  text decoration*/
+    color: white;
+}
+
+#index footer .follow a:hover{
+    
+    color: rgb(109, 107, 107);
+}
+
+#index footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#index footer .follow i{
+    font-size: 35px;
+    
+}
+
+#index footer .info{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+  
+
+/************** Products Style ****************/
+
+#products{
+    font-family: 'Roboto', sans-serif;
+}
+
+#products header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+   
+}
+
+#products main {
+   
+    flex-wrap: wrap; /*Adjusts the position of the cards*/
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+ }
+ 
+ #products article{
+    position: relative;
+   padding: 30px;
+ }
+ 
+ 
+ #products article .image{
+    height: 180px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+  
+ }
+ 
+ #products article .text{
+    height: 300px;
+    width: 300px;
+    background-color: whitesmoke;
+    padding: 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+    box-shadow: 10px 10px 5px lightblue;
+ }
+ 
+ #products article .text .header{
+    text-transform: uppercase;
+    font-size: 12px;
+ }
+ 
+ #products article .text .footerr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+ }
+ 
+ #products article .box{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;  /*Text transform uppercase*/
+    padding: 6px;
+    position: absolute;
+    left: 30px;
+    top: 219px;
+ 
+ }
+ 
+ #products article .des{
+    font-size: 14px;
+ }
+ 
+ #products article .pr{
+    font-size: 25px;
+ }
+ 
+ #products article .buy{
+    text-align: center;
+    margin-top: 10px;
+   
+ }
+ 
+ #products article a{
+    text-align: center;
+    width: 280px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: green;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 15px;  /*Make border*/
+ }
+ 
+ #products article a:hover{
+    color: rgb(0, 0, 0);
+ }
+ 
+
+ 
+ #products .contact{
+   background-color: black;
+   margin-top: 10px;
+ }
+ 
+ #products .contact:hover{
+    color: green;
+ }
+
+#products footer{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#products footer .follow{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#products footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#products footer .follow a:hover{
+    
+    color: rgb(109, 107, 107);
+}
+
+#products footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#products footer .follow i{
+    font-size: 35px;
+    
+}
+
+#products footer .info{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+ #myBtn:hover {
+    background-color: #555;
+  }
+
+/***************** About Style ********************/
+
+#about{
+    font-family: 'Poppins', sans-serif;
+}
+
+#about header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+   
+}
+
+#about article{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about article .text{
+   position: relative; 
+   left: 100px;
+   width: 50%;
+   max-height: 500px;
+
+}
+
+#about article .text h1{
+    font-size: 40px;
+    padding: 5px;
+}
+
+#about article .text p{
+    font-size: 19px;
+    padding: 10px;
+}
+
+#about article .text a{
+    width: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 50px 50px 0 50px;
+    text-decoration: none;
+}
+
+#about article .text a:hover{
+    color: green;
+}
+
+#about article .text .button{
+    padding-top: 20px;
+}
+
+#about article .card{
+    width: 50%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#about article .card .text{
+    width: 350px;
+    height: 350px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+}
+
+#about article .card .text .p{
+    padding-top: 170px;
+}
+
+#about article .card .ima{
+    position: relative;
+    background-image: url("image/user.png");
+    background-size: cover;
+    background-position: center;
+    width: 250px;
+    height: 350px;
+    top: -190px;
+    left: -200px;
+   
+}
+
+#about .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .contact article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 400px;
+    position: relative;
+}
+
+#about .contact .left{
+    height: 250px;
+    width: 50%;
+    background-image: url("image/contact.svg");
+    background-size: cover;
+}
+
+#about .contact .right{
+    height: 250px;
+    width: 50%;
+    background: whitesmoke;
+}
+
+#about .contact h2{
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 420px;
+    width: auto;
+    padding: 20px;
+    background-color: white;
+    color: blue;
+    font-size: 25px;
+    
+}
+
+#about .contact h1{
+    position: absolute;
+    font-size: 20px;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    top: 70px;
+    left: 290px;
+    z-index: 100;
+}
+
+#about footer{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#about footer .follow{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#about footer .follow a:hover{
+    
+    color: rgb(109, 107, 107);
+}
+
+#about footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#about footer .follow i{
+    font-size: 35px;
+    
+}
+
+#about footer .info{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/************ Buy Style **************/
+
+#buy main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy header{
+    text-align: center;
+}
+
+#buy main .container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+#buy main .container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("image/car6.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+#buy main .contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+#buy main .left{
+	background: url("image/user.png") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+#buy main .right{
+	padding: 25px 40px;
+}
+
+#buy main h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+#buy main h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+#buy main .field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+#buy main .field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#buy main textarea{
+	min-height: 70px;
+}
+
+#buy main .btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+#buy main .btn:hover{
+    background-color: #27ae60;
+}
+
+#buy main .field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	#buy main .contact-box{
+		grid-template-columns: 1fr;
+	}
+	#buymain .left{
+		height: 200px;
+	}
+}
+
+#buy  footer{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#buy footer .follow{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buy footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#buy footer .follow a:hover{
+    
+    color: rgb(109, 107, 107);
+}
+
+#buy footer .follow a{
+    text-decoration: none;
+    color: white;
+}
+
+#buy footer .follow i{
+    font-size: 35px;
+    
+}
+
+#buy footer .info{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
