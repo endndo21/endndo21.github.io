@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endri</title>
+    <style>
+
+.tra{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    background-color: green;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.tra:hover{
+    transform: rotate(180deg);
+}
+
+.tro{
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    background-color: brown;
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.tro:hover{
+  transform: rotate(180deg);
+  transition-duration: 2s;
+  background-color: rgb(6, 12, 0);
+ background-color: darkblue;
+ transition: transform 2s, background-color 15s;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Rotate</h1>
+    <p>The rotate() CSS function defines a Transformation that rotates an element around a fixed point on the 2D plane, without deforming it.</p>
+    
+<div class="tra">
+    <p>rotate</p>
+</div>
+
+<div class="tro">
+    <p>rotate</p>
+</div>
+
+</body>
+</html>
