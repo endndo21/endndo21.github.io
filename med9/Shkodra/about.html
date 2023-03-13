@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style/style.css">
+<script src="https://kit.fontawesome.com/d0f9e39624.js" crossorigin="anonymous"></script>
+<title>Shkodra</title>
+<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+</head>
+<script src="javascript/script.js"></script> 
+<body style="font-family:Verdana;">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-sort-up"></i></button>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <header>
+    <input type ="checkbox" name ="" id ="chk1">
+    <div class="logo"><img src="image/Logo.png" alt="" width="150px"></div>
+       
+        <ul>
+            <li><a href="index.html">Faqja e pare</a></li>
+            <li><a href="image.html">Foto</a></li>
+            <li><a href="about.html">Rreth faqes</a></li>
+      
+            <li> 
+                <a href="https://www.instagram.com/eagletechnician/"><i class="fa fa-instagram"></i></a> 
+                <a href="https://www.tiktok.com/@eagletechnician?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>  
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+</header>
+
+<div class="br">
+<div class="about-section">
+  <div class="inner-container">
+      <h1>Rreth faqes</h1>
+      <p class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit ducimus, enim inventore earum, eligendi nostrum pariatur necessitatibus eius dicta a voluptates sit deleniti autem error eos totam nisi neque voluptates sit deleniti autem error eos totam nisi neque.
+      </p>
+      <div class="skills">
+          <span>Web Design</span>
+          <span>Photoshop & Illustrator</span>
+          <span>Coding</span>
+      </div>
+  </div>
+</div>
+</div>
+
+<div id="contai" class="contai">
+
+  <h1 class="heading">Antaret</h1>
+
+  <div class="box-contai">
+
+      <div class="box">
+        <i class="fa-solid fa-code"></i>
+          <h3>Krijimi i faqes</h3>
+          <p>Kjo faqe eshte krijuar nga Endri Ndoja.</p>
+        
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-pen-nib"></i>
+          <h3>Dizaini</h3>
+          <p>Faqja është dizenjuar nga Sidrit Muçaj.</p>
+        
+      </div>
+
+      <div class="box">
+        <i class="fa-sharp fa-solid fa-people-group"></i>
+          <h3>Perpuimi i Informacioneve</h3>
+          <p>Informacionet jane mbledhur edhe perpunuar nga klasa 2b.</p>
+          <a href="antaret.html" class="btn">Lexo me shume</a>
+        
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-chalkboard-user"></i>
+          <h3>Mesuesja</h3>
+          <p>Projekti është organizuar edhe pranuar nga mesuese Resarta Meti.</p>
+        
+      </div>
+
+      
+      
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+      
+        <span class="logo_name">SHKODRA</span>
+      </div>
+      <div class="media-icons">
+        
+        <a href="https://www.instagram.com/eagletechnician/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@eagletechnician?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+       
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">SHKODRA</li>
+        <li><a href="index.html">Faqja e pare</a></li>
+        <li><a href="image.html">Foto</a></li>
+        <li><a href="about.html">Rreth faqes</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Rreth Qytetit</li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Vendollja</a></li>
+        <li><a href="#">Arti dhe Kultura</a></li>
+        <li><a href="#">Sociologjia</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Account</li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">My account</a></li>
+        <li><a href="#">Prefrences</a></li>
+        <li><a href="#">Purchase</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Punuan</li>
+        <li>Emri</li>
+        <li>Emri</li>
+        <li>Emri</li>
+        <li>Emri</li>
+      </ul>
+      
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 <a href="#">SHKODRA.</a>Te gjitha te drejtat jane te rezervuara.</span>
+     
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
