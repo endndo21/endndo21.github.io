@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/all.css">
+<script src="https://kit.fontawesome.com/d0f9e39624.js" crossorigin="anonymous"></script>
+<title>Shkodra</title>
+<link rel="icon" type="image/x-icon" href="image/favicon.ico">
+</head>
+<script src="javascript/script.js"></script> 
+<body style="font-family:Verdana;">
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-sort-up"></i></button>
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+  <nav>
+    <input type ="checkbox" name ="" id ="chk1">
+    <div class="logo"><img src="image/Logo.png" alt="" width="150px"></div>
+       
+        <ul>
+            <li><a href="index.html">Faqja e pare</a></li>
+            <li><a href="image.html">Foto</a></li>
+            <li><a href="about.html">Rreth faqes</a></li>
+      
+            <li> 
+                <a href="https://www.instagram.com/eagletechnician/"><i class="fa fa-instagram"></i></a> 
+                <a href="https://www.tiktok.com/@eagletechnician?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>  
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+      </nav>
+
+<div class="br">
+<div class="about-section">
+  <div class="inner-container">
+      <h1>Rreth faqes</h1>
+      <p class="text">
+        "Kjo faqe është krijuar për një projekt në lëndën e Gjuhës Shqipe. 
+        Faqja e webit është krijuar nga Endri Ndoja dhe më pas është dizenjuar
+         nga Sidrit Mucaj. Informacionet në këtë faqe webi janë mbledhur dhe 
+         përpunuar nga klasa 2b në shkollën "Peter Mahringer", ndryshe njihet
+          edhe si shkolla Austriake në Shkodër. Ky projekt ka si temë qytetin
+           e Shkodrës, ku bën fjalë për historinë e saj, pozitën gjeografike, 
+           artin dhe kulturën, si dhe sociologjinë, edhe pse jo vendet më të 
+           preferuara në Shkodër. Projekti është pranuar nga mësuesja Rezarta Meti,
+            e cila është mësuese e gjuhës dhe letërsisë dhe gjithashtu e ka vlerësuar
+             projektin".
+      </p>
+      <div class="skills">
+          <span>Projekt</span>
+          <span>Lënda Gjuhë Shqipe</span>
+          <span>Klasa 2b</span>
+      </div>
+  </div>
+</div>
+</div>
+
+<div id="contai" class="contai">
+
+  <h1 class="heading">Antarët</h1>
+
+  <div class="box-contai">
+
+      <div class="box">
+        <i class="fa-solid fa-code"></i>
+          <h3>Krijimi i faqes</h3>
+          <p>Kjo faqe është krijuar nga Endri Ndoja.</p>
+        
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-pen-nib"></i>
+          <h3>Design</h3>
+          <p>Faqja është dizenjuar nga Sidrit Muçaj.</p>
+        
+      </div>
+
+      <div class="box">
+        <i class="fa-sharp fa-solid fa-people-group"></i>
+          <h3>Përpuimi i Informacioneve</h3>
+          <p>Informacionet janë mbledhur edhe përpunuar nga klasa 2b.</p>
+          <a href="antaret.html" class="btn">Lexo me shumë</a>
+        
+      </div>
+
+      <div class="box">
+        <i class="fa-solid fa-chalkboard-user"></i>
+          <h3>Mesuesja</h3>
+          <p>Projekti është organizuar edhe pranuar nga mësuese Resarta Meti.</p>
+        
+      </div>
+
+      
+      
+
+  </div>
+
+</div>
+
+<footer>
+  <div class="content">
+    <div class="top">
+      <div class="logo-details">
+      
+        <span class="logo_name">SHKODRA</span>
+      </div>
+      <div class="media-icons">
+        
+        <a href="https://www.instagram.com/eagletechnician/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@eagletechnician?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
+       
+      </div>
+    </div>
+    <div class="link-boxes">
+      <ul class="box">
+        <li class="link_name">SHKODRA</li>
+        <li><a href="index.html">Faqja e pare</a></li>
+        <li><a href="image.html">Foto</a></li>
+        <li><a href="about.html">Rreth faqes</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Rreth Qytetit</li>
+        <li><a href="#">Historia</a></li>
+        <li><a href="#">Vendollja</a></li>
+        <li><a href="#">Arti dhe Kultura</a></li>
+        <li><a href="#">Sociologjia</a></li>
+      </ul>
+      <ul class="box">
+        <li class="link_name">Ndertuar nga</li>
+        <li>Endri Ndoja</li>
+        <li>Sidrit Mucaj</li>
+       
+      </ul>
+      <ul class="box">
+        <li class="link_name">Rreth projektit</li>
+        <li><a href="antaret.html">Klasa 2b</a></li>
+        <li><a href="https://htl-shkoder.com/sq/home/home-page/">Shkolla "Peter Mahringer"</a> </li>
+        <li>Data 12.4.2023</li>
+        <li>Mesuese Rezarta Meti</li>
+      </ul>
+      
+    </div>
+  </div>
+  <div class="bottom-details">
+    <div class="bottom_text">
+      <span class="copyright_text">Copyright © 2023 <a href="index.html">SHKODRA.</a>Te gjitha te drejtat jane te rezervuara.</span>
+     
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
