@@ -274,7 +274,7 @@ padding: 20px;
   padding-top: 100px;
 }
 .about-section{
-  background: url("/image/about.jpg") no-repeat left;
+  background: url("../image/about.jpg") no-repeat left;
   background-size: 55%;
   background-color: #fdfdfd;
   overflow: hidden;
@@ -1031,7 +1031,7 @@ main{
 }
 
  .bg-image {
-  background-image: url("/image/background.jpg");
+  background-image: url("../image/background.jpg");
   height: 100vh;
   min-height: 500px;
   filter: blur(8px);   /*Filter for Img*/
